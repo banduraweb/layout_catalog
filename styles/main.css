@@ -89,10 +89,10 @@ h1 {
     display: none; } }
 
 .products {
-  margin: 0 auto;
+  margin: 50px auto;
   max-width: 944px;
   display: grid;
-  grid-column-gap: 48px;
+  gap: 48px;
   grid-template-columns: repeat(4, 1fr); }
 
 .card {
@@ -168,9 +168,6 @@ h1 {
       background-color: #fff;
       color: #00acdc; }
 
-.card-container {
-  margin-top: 50px; }
-
 .stars {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -206,10 +203,6 @@ h1 {
 .description {
   font-size: 11px;
   line-height: 13px; }
-
-@media screen and (min-width: 1200px) {
-  .products {
-    margin: 0 auto; } }
 
 .card-img-background {
   background-color: red;
