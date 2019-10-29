@@ -91,14 +91,9 @@ h1 {
 .products {
   margin: 0 auto;
   max-width: 944px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  display: grid;
+  grid-column-gap: 48px;
+  grid-template-areas: ". . . ."; }
 
 .card {
   -webkit-box-sizing: border-box;
@@ -107,8 +102,9 @@ h1 {
   height: 403px;
   padding: 15px;
   border: 1px solid #f3f3f3;
-  border-radius: 5px; }
-  .card__item {
+  border-radius: 5px;
+  justify-self: start; }
+  .card__inner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -119,22 +115,22 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .card__item-img {
+  .card__inner-img {
     width: 160px;
     height: 134px;
     background-image: url("../images/imac.jpeg");
     background-size: cover; }
-  .card__item-title {
+  .card__inner-title {
     font-weight: 500;
     font-size: 12px;
     line-height: 15px; }
-  .card__item-code {
+  .card__inner-code {
     width: 101px;
     height: 13px;
     -ms-flex-item-align: start;
         align-self: flex-start;
     margin-bottom: 16px; }
-  .card__item-rate {
+  .card__inner-rate {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -142,7 +138,7 @@ h1 {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%; }
-  .card__item-price {
+  .card__inner-price {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
